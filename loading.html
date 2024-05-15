@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCodz</title>
+    <style>
+        body{
+
+            background-color: aqua;
+
+        }
+        .loader{
+            margin-top: 200px;
+            position: fixed;
+            top:0;
+            left:0;
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-content: center;
+            transition:opacity 0.73s,visibility 0.73s;
+
+        }
+
+        .loader-hidden{
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader::after{
+            content: "";
+            width:75px;
+            height:75px;
+            border: 5px solid yellow;
+            border-radius: 50%;
+            border-top-color:transparent ;
+            animation: loadingFun 1s ease infinite;
+
+        }
+
+        @keyframes loadingFun {
+            from{
+                transform: rotate(0turn);
+            }
+            to{
+                transform: rotate(1turn);
+
+            }
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Learn Codz</h1>
+    <h2>Follow for more </h2>
+<div class="loader"></div>
+    
+</body>
+</html>
